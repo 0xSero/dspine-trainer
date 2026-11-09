@@ -1,0 +1,7 @@
+dspine-trainer
+Licensed under the Apache License, Version 2.0.
+
+Uses SpecForge (MIT, https://github.com/sgl-project/SpecForge) for the DSpine model and loss.
+DSpine is by Tencent (Apache-2.0, https://github.com/tencent/dspine, arXiv 2609.36173).
+capture/tensorfold/patch_decode.py edits TensorFold (Apache-2.0, https://github.com/ashhart/TensorFold).
+No model weights or datasets are included in this repository.

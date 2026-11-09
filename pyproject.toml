@@ -1,0 +1,24 @@
+[project]
+name = "dspine-trainer"
+version = "0.1.0"
+description = "Train a DSpine speculative-decoding drafter on your own data"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+dependencies = [
+    "specforge @ git+https://github.com/sgl-project/SpecForge.git@2dadea10e317842af21c79e2097dc05abe1e2b5a",
+    "datasets",
+    "huggingface-hub",
+    "safetensors",
+    "transformers==5.12.1",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["dspine_trainer"]
+
+[tool.uv]
+prerelease = "allow"
